@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{%block title%}{%endblock%}</title>
+    {%load static%}
+    <link rel="stylesheet" type="text/css" href="{%static 'main/css/index.css'%}">
+    <link rel="stylesheet" type="text/css" href="{%static 'main/css/text.css'%}">
+    <link rel="stylesheet" type="text/css" href="{%static 'main/css/otziv.css'%}">
+    <style>
+        header {
+            position: absolute;
+            width: 100%;
+            top: 0px;
+            left: 0px;
+            height: 123px;
+            flex-shrink: 0;
+            background: rgba(29, 158, 158, 0.55);
+        }
+        .basa {
+            
+            position: absolute;
+            top: 100px;
+            left: 0px;
+            width: 100%;
+            height: 100%;
+        }
+        body {
+            background-image: url("../../static/main/image/aerial-shot-of-playa-del-silencio-asturias-spain.jpg");
+            background-size: 100% 1700%;
+            background-repeat: no-repeat;
+        }
+        h1 {
+            color: #FFF;
+            position: absolute;
+font-family: sans-serif;
+font-size: 64px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+left: 100px;
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <header>
+        <h1>Sun of Crimea</h1>
+    </header>
+    <br>
+    <br>
+    <br>
+    <div class="basa">
+        {%block content%}
+
+        {%endblock%}
+    </div>
+    
+    <!--<a href="https://ru.freepik.com/free-photo/aerial-shot-of-playa-del-silencio-asturias-spain_17545376.htm#query=%D0%BA%D1%80%D1%8B%D0%BC&position=2&from_view=keyword&track=sph&uuid=d305bb22-e4b1-42c7-be93-cc00e184b8ad">Изображение от wirestock</a> на Freepik !-->
+    
+</body>
+</html>

@@ -1,0 +1,19 @@
+{%extends "main/base.html"%}
+{%block title%}Это тест{%endblock%}
+{%block content%}
+<a href="/">Путь назад</a>
+<div class="products_block">
+    <nav>
+    <ul>
+    {%for x in table%}
+    <div class="product">
+        <p class="title">{{x.title}}</p>
+        <br>
+        <p class="text">{{x.text}}</p>
+        <p class="text">{{x.prize}}</p>
+    </div>
+    {%endfor%}
+    </ul>
+    </nav>
+</div>
+{%endblock%}

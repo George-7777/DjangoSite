@@ -1,0 +1,22 @@
+{%extends "main/base.html"%}
+{%block title%}Отзывы{%endblock%}
+{%block content%}
+<a href="/">Путь назад</a>
+<h1>Добавить товар</h1>
+<br>
+<div class="add_otziv">
+    <h2>Добавить товар</h2>
+    <form method="post">
+        
+        {%csrf_token%}
+        {{form.title}}
+        {{form.text}}
+        {{form.prize}}
+        <button type="submit" class="button_otziv">Отправить товар</button>
+<span style="background-color: rgb(255, 0, 0); width: 100px; height: 100px;">{{error}}</span>
+
+    </form>
+
+</div>
+
+{%endblock%}

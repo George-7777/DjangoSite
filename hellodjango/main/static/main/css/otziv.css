@@ -1,0 +1,14 @@
+.add_otziv{
+    position: absolute;
+    top: 150px;
+    background-color: rgba(16, 207, 144, 0.753);
+}
+.button_otziv{
+    width: 100px;
+    height: 50px;
+}
+.pomom{
+    background-color: rgb(255, 0, 0);
+    width: 100px;
+    height: 100px;
+}
